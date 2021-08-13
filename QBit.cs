@@ -16,8 +16,16 @@ namespace QSIM
             Set(val);
         }
 
-        public QBit CNOT(QBit a)
+        public QBit CNOT(ref QBit b)
         {
+            if (B == 0)
+            {
+                b.X();
+            }
+            else
+            {
+                B *= -1;
+            }
             return this;
         }
 
@@ -74,14 +82,7 @@ namespace QSIM
 
         public static void CNOT(ref QBit a, ref QBit b)
         {
-            if (a.B == 0)
-            {
-                b.X();
-            }
-            else
-            {
-                a.B *= -1;
-            }
+            a.CNOT(ref b);
         }
 
         /// <summary>
