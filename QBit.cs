@@ -16,6 +16,7 @@ namespace QSIM
             Set(val);
         }
 
+        // (!) this is a disgusting/elegant kernelization of what CNOT actually does and this only works in this specific instance
         public QBit CNOT(ref QBit b)
         {
             if (B == 0)
