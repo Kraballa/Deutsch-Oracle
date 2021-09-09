@@ -11,6 +11,8 @@ A Computer operating on quantum bits only requires one executions of the functio
 The model is using a simplified version of QBits that rely on real numbers instead of imaginary ones. 
 Quantum entanglement has not been implemented as this is where the simulation would reach exponential complexity.
 
+*The actual point of the Deutsch Oracle isn't really present here. For the full deal [this Wikipedia article](https://en.wikipedia.org/wiki/Deutsch%E2%80%93Jozsa_algorithm) may be a nice starting point*.
+
 # Source
 - [Quantum Computing for Computer Scientists](https://www.youtube.com/watch?v=F_Riqjdh2oM)
 - figuring out how to implement it myself
